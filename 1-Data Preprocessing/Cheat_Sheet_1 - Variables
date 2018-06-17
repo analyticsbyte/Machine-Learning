@@ -1,0 +1,26 @@
+Below is a summary of which situations we have to apply LabelEncoder and OneHotEncoder. When your variable has string values and is:
+
+INDEPENDENT = The independent variable is the variable whose change isn’t affected by 
+              any other variable in the experiment
+
+ORDINAL (Categorical + Ordering) = economic status (low,medium,high), Educational 
+                                   Experience(high school, graduate, post-graduate)
+
+NOMINAL (Categorical + no intrinsic ordering) = Gender (Male, Female), Hair Color(Black, 
+                                                White, Blonde)
+
+DEPENDENT = Dependend on other variable
+
+
+
+
+
+THUMB Rule ::
+
+INDEPENDENT & ORDINAL -> Manual Mapping
+
+INDEPENDENT & NOMINAL -> LabelEncoder + OneHotEncoder
+
+DEPENDENT & ORDINAL -> Manual Mapping
+
+DEPENDENT & NOMINAL -> LabelEncoder
